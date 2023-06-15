@@ -1,0 +1,19 @@
+{
+  "name": "testes-quinta",
+  "version": "1.0.0",
+  "description": "testes usando o jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulioVianaDev/testes-javascript-quinta.git"
+  },
+  "author": "Tomate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulioVianaDev/testes-javascript-quinta/issues"
+  },
+  "homepage": "https://github.com/JulioVianaDev/testes-javascript-quinta#readme"
+}
