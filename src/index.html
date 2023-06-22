@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Testes unitarios</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <h1 id="titleApp">Testando Apps</h1>
@@ -15,9 +16,9 @@
     <button id="form-button" onclick="preencher()">Clique Aqui!</button>
   </div>
   <div id="table-container">
-    <table>
+    <table data-testid="tabela">
       <thead>
-        <tr>
+        <tr id="trPrincipal">
           <td>Criação</td>
           <td>Nome</td>
           <td>Desc</td>
