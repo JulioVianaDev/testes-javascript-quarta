@@ -77,5 +77,29 @@ describe('testando o index.html',()=>{
       expect(nomeInput.value).toBe('')
       expect(descInput.value).toBe('')
     })
+    describe('delete funcionando',()=>{
+      it('checando se deleta',()=>{
+        const botao = getByText(container,'Clique Aqui!');
+        const nomeInput = getByTestId(container,'nome-anime');
+        const descInput = getByTestId(container,'desc-anime');
+  
+        nomeInput.value = "One piece"
+        descInput.value = "Pirata que estica"
+  
+        fireEvent.click(botao);
+        
+        let qtdTrs = container.querySelectorAll('#tbody tr');
+        let primeiraLinha = qtdTrs[0]
+  
+        let buttonDelete = primeiraLinha.querySelector('.buttonDelete')
+        console.log(buttonDelete)
+        fireEvent(buttonDelete)
+        
+        qtdTrs = container.querySelectorAll('#tbody tr');
+  
+        expect(qtdTrs.length).toBe(0)
+      })
+    })
   })
+  
 })
